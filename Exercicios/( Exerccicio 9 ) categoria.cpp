@@ -1,31 +1,15 @@
 #include <iostream>
-#include <locale>
 using namespace std;
 int main()
 {
-setlocale(LC_ALL, "ptb");
-int IDADE;
+int i = 0;
+int contador, num = 1, soma = 0;
 
-cout <<"Informe a idade do competidor :";
-cin >> IDADE;
-if (IDADE >= 7 && IDADE <= 12)
-{
-cout <<"CATAGORIA INFANTIL";
-}
-else if (IDADE >= 13 && IDADE <= 17)
-{
-cout <<"CATAGORIA JOVENIL";
-}
-else if (IDADE >= 18 && IDADE <= 49)
-{
-cout <<"CATAGORIA ADULTO";
-}
-else if (IDADE >= 50)
-{
-cout <<"CATAGORIA SENIOR";
-}
-else 
-{
-cout <<"Não tem idade permitida para Participar";
+for (contador = 1; contador <= 20; contador += 5) {
+
+        soma = soma + num;
+
+         num = num + 3;
+cout << num << " aaaa " << soma;
 }
 }
